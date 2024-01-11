@@ -21,7 +21,7 @@ app.post('/audit', async (req, res) => {
         // const Queue = await import('p-queue');
         const lighthouseReports = await main_2(urls);
         console.log(lighthouseReports)
-        res.json({ lighthouseReports });
+        res.json( lighthouseReports );
     } catch (error) {
         console.error('Error processing audit request:', error);
         res.status(500).json({ error: 'Internal server error' });
