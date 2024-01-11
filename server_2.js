@@ -6,6 +6,7 @@ const port = 3000;
 
 app.use(bodyParser.json());
 app.get('/', (req, res) => {
+    console.log('Server has been pinged')
     return res.status(200).json({ message: 'The server is running' });
 });
 
